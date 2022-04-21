@@ -36,21 +36,21 @@
 			<string>com.github.codeskipper.WorkSpaceOneImporter/WorkSpaceOneImporter</string>
 			<key>Arguments</key>
 			<dict>
-				<key>MUNKI_REPO_PATH</key>
+				<key>munki_repo_path</key>
 				<string>%MUNKI_REPO_PATH%</string>
-				<key>WS1_API_URL</key>
+				<key>ws1_api_url</key>
 				<string>%WS1_API_URL%</string>
-				<key>WS1_GROUPID</key>
+				<key>ws1_groupid</key>
 				<string>%WS1_GROUPID%</string>
-				<key>API_TOKEN</key>
+				<key>api_token</key>
 				<string>%API_TOKEN%</string>
-				<key>API_USERNAME</key>
+				<key>api_username</key>
 				<string>%API_USERNAME%</string>
-				<key>API_PASSWORD</key>
+				<key>api_password</key>
 				<string>%API_PASSWORD%</string>
-				<key>SMART_GROUP_NAME</key>
+				<key>smart_group_name</key>
 				<string>%SMART_GROUP_NAME%</string>
-				<key>PUSH_MODE</key>
+				<key>push_mode</key>
 				<string>%PUSH_MODE%</string>
 			</dict>
 		</dict>
