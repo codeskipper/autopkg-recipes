@@ -8,18 +8,20 @@
 	<string>com.github.codeskipper.ws1.SuspiciousPackage</string>
 	<key>Input</key>
 	<dict>
-		<key>MUNKI_REPO_PATH</key>
-		<string>MUNKI_REPO_PATH_HERE</string>
-		<key>WS1_API_URL</key>
-		<string>WORKSPACEONE_API_URL_HERE</string>
-		<key>WS1_GROUPID</key>
-		<string>GROUP_ID_HERE</string>
 		<key>API_TOKEN</key>
 		<string>API_TOKEN_HERE</string>
 		<key>API_USERNAME</key>
 		<string>API_USERNAME_HERE</string>
 		<key>API_PASSWORD</key>
 		<string>API_PASSWORD_HERE</string>
+		<key>MUNKI_REPO_PATH</key>
+		<string>MUNKI_REPO_PATH_HERE</string>
+		<key>WS1_API_URL</key>
+		<string>WORKSPACEONE_API_URL_HERE</string>
+		<key>WS1_CONSOLE_URL</key>
+		<string>WORKSPACEONE_CONSOLE_URL_HERE</string>
+		<key>WS1_GROUPID</key>
+		<string>GROUP_ID_HERE</string>
 		<key>SMART_GROUP_NAME</key>
 		<string>SMART_GROUP_NAME</string>
 		<key>PUSH_MODE</key>
