@@ -40,16 +40,18 @@
 			<dict>
 				<key>munki_repo_path</key>
 				<string>%MUNKI_REPO_PATH%</string>
-				<key>ws1_api_url</key>
-				<string>%WS1_API_URL%</string>
-				<key>ws1_groupid</key>
-				<string>%WS1_GROUPID%</string>
 				<key>api_token</key>
 				<string>%API_TOKEN%</string>
 				<key>api_username</key>
 				<string>%API_USERNAME%</string>
 				<key>api_password</key>
 				<string>%API_PASSWORD%</string>
+				<key>ws1_api_url</key>
+				<string>%WS1_API_URL%</string>
+				<key>ws1_groupid</key>
+				<string>%WS1_GROUPID%</string>
+				<key>ws1_console_url</key>
+				<string>%WS1_CONSOLE_URL%</string>
 				<key>smart_group_name</key>
 				<string>%SMART_GROUP_NAME%</string>
 				<key>push_mode</key>
