@@ -1,4 +1,4 @@
-Comment: Wonder if this gets displayed anywhere?
+Comment: First recipe with yaml format, need 'vmware-' in filename and in identifier to distinguish
 Description: Creates a munki package for Suspicious Package, and imports it into WorkSpace ONE.
 Identifier: com.github.codeskipper.vmware-ws1.SuspiciousPackage
 ParentRecipe: com.github.codeskipper.munki.SuspiciousPackage
