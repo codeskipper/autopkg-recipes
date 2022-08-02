@@ -1,0 +1,35 @@
+Comment:
+Description: Creates a munki package for Mozilla Firefox, and imports it into WorkSpace ONE.
+Identifier: com.github.codeskipper.ws1.MozillaFirefox
+ParentRecipe: com.github.autopkg.munki.firefox-rc-en_US
+MinimumVersion: '2.3'
+
+Input:
+  NAME: Mozilla Firefox
+  MUNKI_REPO_PATH: '%MUNKI_REPO%'
+  LOCALE: en-US
+  RELEASE: latest-esr
+
+  API_USERNAME: API_USERNAME_HERE
+  API_PASSWORD: API_PASSWORD_HERE
+  API_TOKEN: API_TOKEN_HERE
+  B64ENCODED_API_CREDENTIALS: B64ENCODED_API_CREDENTIALS_HERE
+  WS1_API_URL: WORKSPACEONE_API_URL_HERE
+  WS1_CONSOLE_URL: WORKSPACEONE_CONSOLE_URL_HERE
+  WS1_GROUPID: GROUP_ID_HERE
+  SMART_GROUP_NAME: SMART_GROUP_NAME_HERE
+  PUSH_MODE: PUSH_MODE_SETTING
+
+Process:
+- Processor: com.github.codeskipper.vmware-WorkSpaceOneImporter/WorkSpaceOneImporter
+  Arguments:
+    api_token: '%API_TOKEN%'
+    munki_repo_path: '%MUNKI_REPO_PATH%'
+    api_username: '%API_USERNAME%'
+    api_password: '%API_PASSWORD%'
+    b64encoded_api_credentials: '%B64ENCODED_API_CREDENTIALS%'
+    ws1_api_url: '%WS1_API_URL%'
+    ws1_console_url: '%WS1_CONSOLE_URL%'
+    ws1_groupid: '%WS1_GROUPID%'
+    smart_group_name: '%SMART_GROUP_NAME%'
+    push_mode: '%PUSH_MODE%'
