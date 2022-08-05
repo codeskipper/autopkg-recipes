@@ -18,7 +18,7 @@ Input:
   PUSH_MODE: PUSH_MODE_SETTING
 
 Process:
-- Processor: com.github.codeskipper.vmware-WorkSpaceOneImporter/WorkSpaceOneImporter
+- Processor: com.github.codeskipper.VMWARE-WorkSpaceOneImporter/WorkSpaceOneImporter
   Arguments:
     api_token: '%API_TOKEN%'
     munki_repo_path: '%MUNKI_REPO_PATH%'

@@ -9,7 +9,10 @@ Input:
   MUNKI_REPO_PATH: '%MUNKI_REPO%'
   LOCALE: en-US
   RELEASE: latest-esr
+  pkginfo:
+    name: '%NAME%'
 
+  # WS1 specific input,  secrets
   API_USERNAME: API_USERNAME_HERE
   API_PASSWORD: API_PASSWORD_HERE
   API_TOKEN: API_TOKEN_HERE
@@ -21,7 +24,7 @@ Input:
   PUSH_MODE: PUSH_MODE_SETTING
 
 Process:
-- Processor: com.github.codeskipper.vmware-WorkSpaceOneImporter/WorkSpaceOneImporter
+- Processor: com.github.codeskipper.VMWARE-WorkSpaceOneImporter/WorkSpaceOneImporter
   Arguments:
     api_token: '%API_TOKEN%'
     munki_repo_path: '%MUNKI_REPO_PATH%'
