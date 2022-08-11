@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec292fc1-80f5-4dd0-987c-59d611a08253" name="Changes" comment="">
+    <list default="true" id="ec292fc1-80f5-4dd0-987c-59d611a08253" name="Changes" comment="added LastPass-Safari.ws1.recipe.yaml">
       <change afterPath="$PROJECT_DIR$/LastPass-Safari.ws1.recipe.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microsoft/MicrosoftTeams.ws1.recipe.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Microsoft/MicrosoftTeams.ws1.recipe.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mozilla/Firefox.ws1.recipe.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Mozilla/Firefox.ws1.recipe.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Suspicious Package/SuspiciousPackage.vmware-ws1.recipe.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Suspicious Package/SuspiciousPackage.vmware-ws1.recipe.yaml" afterDir="false" />
     </list>
@@ -39,6 +41,14 @@
       <option name="presentableId" value="Default" />
       <updated>1660067927005</updated>
     </task>
+    <task id="LOCAL-00001" summary="added LastPass-Safari.ws1.recipe.yaml">
+      <created>1660215133794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660215133794</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -51,5 +61,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added LastPass-Safari.ws1.recipe.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added LastPass-Safari.ws1.recipe.yaml" />
   </component>
 </project>

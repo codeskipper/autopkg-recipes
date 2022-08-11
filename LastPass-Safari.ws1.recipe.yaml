@@ -1,13 +1,12 @@
 Comment:
-Description: Creates a munki package for Mozilla Firefox, and imports it into WorkSpace ONE.
-Identifier: com.github.codeskipper.ws1.MozillaFirefox
-ParentRecipe: com.github.autopkg.munki.firefox-rc-en_US
+Description: Creates a munki package for LastPass for Safari, and imports it into WorkSpace ONE.
+Identifier: com.github.codeskipper.ws1.LastPass_Safari
+ParentRecipe: com.github.poundbangbash.eholtam-recipes.munki.LastPass_Safari
 MinimumVersion: '2.3'
 
 Input:
-  NAME: Mozilla Firefox
-  LOCALE: en-US
-  RELEASE: latest-esr
+  NAME: LastPass for Safari
+  MUNKI_REPO_SUBDIR: apps/lastpass
   pkginfo:
     name: '%NAME%'
 

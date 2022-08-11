@@ -8,7 +8,6 @@ Input:
   NAME: Suspicious Package
   pkginfo:
     name: '%NAME%'
-  #MUNKI_REPO_PATH: '%MUNKI_REPO%'
   WS1_API_USERNAME: API_USERNAME_HERE
   WS1_API_PASSWORD: API_PASSWORD_HERE
   WS1_API_TOKEN: API_TOKEN_HERE
@@ -23,7 +22,6 @@ Process:
 - Processor: com.github.codeskipper.VMWARE-WorkSpaceOneImporter/WorkSpaceOneImporter
   Arguments:
     ws1_api_token: '%WS1_API_TOKEN%'
-    #munki_repo_path: '%MUNKI_REPO_PATH%'
     ws1_api_username: '%WS1_API_USERNAME%'
     ws1_api_password: '%WS1_API_PASSWORD%'
     ws1_b64encoded_api_credentials: '%WS1_B64ENCODED_API_CREDENTIALS%'
