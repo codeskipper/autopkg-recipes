@@ -10,7 +10,7 @@ Input:
   pkginfo:
     name: '%NAME%'
     description: PyCharm provides smart code completion, code inspections, on-the-fly error highlighting and quick-fixes, along with automated code refactorings and rich navigation capabilities.
-    notes: For development and maintenance of Autopkg automations
+    notes: For development of Python based projects
 
   # WS1 specific input,  secrets
   WS1_API_USERNAME: API_USERNAME_HERE
