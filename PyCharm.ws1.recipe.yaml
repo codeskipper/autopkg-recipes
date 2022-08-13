@@ -1,0 +1,37 @@
+Comment:
+Description: Creates a munki package for PyCharm Community Edition, and imports it into WorkSpace ONE.
+Identifier: com.github.codeskipper.ws1.PyCharm
+ParentRecipe: com.github.its-unibas.munki.PyCharm
+MinimumVersion: '2.3'
+
+Input:
+  NAME: PyCharm Community Edition
+  CODESIGNATUREREQUIREMENT: identifier "com.jetbrains.pycharm.ce" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2ZEFAR8TH3"
+  pkginfo:
+    name: '%NAME%'
+    description: PyCharm provides smart code completion, code inspections, on-the-fly error highlighting and quick-fixes, along with automated code refactorings and rich navigation capabilities.
+    notes: For development and maintenance of Autopkg automations
+
+  # WS1 specific input,  secrets
+  WS1_API_USERNAME: API_USERNAME_HERE
+  WS1_API_PASSWORD: API_PASSWORD_HERE
+  WS1_API_TOKEN: API_TOKEN_HERE
+  WS1_B64ENCODED_API_CREDENTIALS: B64ENCODED_API_CREDENTIALS_HERE
+  WS1_API_URL: WORKSPACEONE_API_URL_HERE
+  WS1_CONSOLE_URL: WORKSPACEONE_CONSOLE_URL_HERE
+  WS1_GROUPID: GROUP_ID_HERE
+  WS1_SMART_GROUP_NAME: SMART_GROUP_NAME_HERE
+  WS1_PUSH_MODE: PUSH_MODE_SETTING
+
+Process:
+- Processor: com.github.codeskipper.VMWARE-WorkSpaceOneImporter/WorkSpaceOneImporter
+  Arguments:
+    ws1_api_token: '%WS1_API_TOKEN%'
+    ws1_api_username: '%WS1_API_USERNAME%'
+    ws1_api_password: '%WS1_API_PASSWORD%'
+    ws1_b64encoded_api_credentials: '%WS1_B64ENCODED_API_CREDENTIALS%'
+    ws1_api_url: '%WS1_API_URL%'
+    ws1_console_url: '%WS1_CONSOLE_URL%'
+    ws1_groupid: '%WS1_GROUPID%'
+    ws1_smart_group_name: '%WS1_SMART_GROUP_NAME%'
+    ws1_push_mode: '%WS1_PUSH_MODE%'
