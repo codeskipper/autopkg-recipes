@@ -9,8 +9,11 @@ Input:
   CODESIGNATUREREQUIREMENT: identifier "com.jetbrains.pycharm.ce" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2ZEFAR8TH3"
   pkginfo:
     name: '%NAME%'
+    displayname: PyCharm Community Edition
     description: PyCharm provides smart code completion, code inspections, on-the-fly error highlighting and quick-fixes, along with automated code refactorings and rich navigation capabilities.
     notes: For development of Python based projects
+    developer: JetBrains
+    category: Productivity
 
   # WS1 specific input,  secrets
   WS1_API_USERNAME: API_USERNAME_HERE
