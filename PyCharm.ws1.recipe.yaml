@@ -7,15 +7,11 @@ MinimumVersion: '2.3'
 Input:
   NAME: PyCharm Community Edition
   CODESIGNATUREREQUIREMENT: identifier "com.jetbrains.pycharm.ce" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2ZEFAR8TH3"
-  pkginfo:
-    name: '%NAME%'
-    displayname: PyCharm Community Edition
-    description: PyCharm provides smart code completion, code inspections, on-the-fly error highlighting and quick-fixes, along with automated code refactorings and rich navigation capabilities.
-    notes: For development of Python based projects
-    developer: JetBrains
-    category: Productivity
 
   # WS1 specific input,  secrets
+  WS1_OAUTH_CLIENT_ID: OAUTH2_CLIENT_ID_HERE
+  WS1_OAUTH_CLIENT_SECRET: OAUTH2_CLIENT_CLIENT_SECRET_HERE
+  WS1_OAUTH_TOKEN_URL: OAUTH2_ACCESS_TOKEN_SERVER_URL_HERE
   WS1_API_USERNAME: API_USERNAME_HERE
   WS1_API_PASSWORD: API_PASSWORD_HERE
   WS1_API_TOKEN: API_TOKEN_HERE
@@ -29,6 +25,9 @@ Input:
 Process:
 - Processor: com.github.codeskipper.VMWARE-WorkSpaceOneImporter/WorkSpaceOneImporter
   Arguments:
+    ws1_oauth_client_id: '%WS1_OAUTH_CLIENT_ID%'
+    ws1_oauth_client_secret: '%WS1_OAUTH_CLIENT_SECRET%'
+    ws1_oauth_token_url: '%WS1_OAUTH_TOKEN_URL%'
     ws1_api_token: '%WS1_API_TOKEN%'
     ws1_api_username: '%WS1_API_USERNAME%'
     ws1_api_password: '%WS1_API_PASSWORD%'

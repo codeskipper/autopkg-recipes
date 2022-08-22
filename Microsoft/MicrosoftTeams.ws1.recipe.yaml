@@ -8,10 +8,11 @@ Input:
   NAME: Microsoft Teams
   MUNKI_REPO_SUBDIR: apps/Microsoft
   MUNKI_CATEGORY: Productivity
-  pkginfo:
-    name: '%NAME%'
 
   # WS1 specific input,  secrets
+  WS1_OAUTH_CLIENT_ID: OAUTH2_CLIENT_ID_HERE
+  WS1_OAUTH_CLIENT_SECRET: OAUTH2_CLIENT_CLIENT_SECRET_HERE
+  WS1_OAUTH_TOKEN_URL: OAUTH2_ACCESS_TOKEN_SERVER_URL_HERE
   WS1_API_USERNAME: API_USERNAME_HERE
   WS1_API_PASSWORD: API_PASSWORD_HERE
   WS1_API_TOKEN: API_TOKEN_HERE
@@ -25,6 +26,9 @@ Input:
 Process:
 - Processor: com.github.codeskipper.VMWARE-WorkSpaceOneImporter/WorkSpaceOneImporter
   Arguments:
+    ws1_oauth_client_id: '%WS1_OAUTH_CLIENT_ID%'
+    ws1_oauth_client_secret: '%WS1_OAUTH_CLIENT_SECRET%'
+    ws1_oauth_token_url: '%WS1_OAUTH_TOKEN_URL%'
     ws1_api_token: '%WS1_API_TOKEN%'
     ws1_api_username: '%WS1_API_USERNAME%'
     ws1_api_password: '%WS1_API_PASSWORD%'
@@ -34,3 +38,5 @@ Process:
     ws1_groupid: '%WS1_GROUPID%'
     ws1_smart_group_name: '%WS1_SMART_GROUP_NAME%'
     ws1_push_mode: '%WS1_PUSH_MODE%'
+
+
