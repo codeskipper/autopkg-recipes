@@ -5,7 +5,21 @@ ParentRecipe: com.github.autopkg.arubdesu-recipes.munki.JetBrainsToolbox
 MinimumVersion: '2.3'
 
 Input:
-
+  ARCH: mac
+  NAME: JetBrains Toolbox
+  pkginfo:
+    catalogs:
+    - testing
+    description: |
+      Manage your JetBrains tools easily.
+        • Install
+        • Update automatically
+        • Update the plugins together with IDE
+        • Roll back and downgrade
+    developer: JetBrains s.r.o.
+    display_name: JetBrains Toolbox
+    name: '%NAME%'
+    unattended_install: true
 
   # WS1 specific input,  secrets
   WS1_OAUTH_CLIENT_ID: OAUTH2_CLIENT_ID_HERE
