@@ -12,11 +12,11 @@ Input:
     catalogs:
     - testing
     description: |
-      'Manage your JetBrains tools easily.
+      "Manage your JetBrains tools easily.
         - Install
         - Update automatically
         - Update the plugins together with IDE
-        - Roll back and downgrade'
+        - Roll back and downgrade"
     developer: JetBrains s.r.o.
     display_name: JetBrains Toolbox
     name: '%NAME%'
