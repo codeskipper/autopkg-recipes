@@ -5,7 +5,7 @@ ParentRecipe: com.github.autopkg.arubdesu-recipes.munki.JetBrainsToolbox
 MinimumVersion: '2.3'
 
 Input:
-  ARCH: mac
+  ARCH: Override_as_mac_or_macM1
   NAME: JetBrains Toolbox
   pkginfo:
     catalogs:
