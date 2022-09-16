@@ -1,5 +1,5 @@
-Comment:
-Description: Creates a munki package for LastPass for Safari, and imports it into WorkSpace ONE.
+Comment: Needed to put in complete pkginfo section to set initial Catalog to Testing
+Description: Imports a munki package for LastPass for Safari into WorkSpace ONE.
 Identifier: com.github.codeskipper.ws1.LastPass_Safari
 ParentRecipe: com.github.poundbangbash.eholtam-recipes.munki.LastPass_Safari
 MinimumVersion: '2.3'
@@ -7,6 +7,18 @@ MinimumVersion: '2.3'
 Input:
   NAME: LastPass for Safari
   MUNKI_REPO_SUBDIR: apps/lastpass
+  pkginfo:
+    name: '%NAME%'
+    display_name: '%NAME%'
+    category: Security
+    catalogs:
+    - testing
+    description: |
+      Securely save passwords and automatically log into any site on the internet.
+    developer: LogMeIn
+    unattended_install: True
+    minimum_os_version: '10.12.0'
+
 
   # WS1 specific input,  secrets
   WS1_OAUTH_CLIENT_ID: OAUTH2_CLIENT_ID_HERE
