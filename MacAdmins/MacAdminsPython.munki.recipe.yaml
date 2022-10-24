@@ -15,7 +15,7 @@ Input:
     catalogs:
     - testing
     description: |
-      Framework files for use with popular Python macadmin toolsets.
+      Framework files for use with popular Python Mac Admin toolsets.
     developer: MacAdmins
     unattended_install: True
     minimum_os_version: '10.9'
