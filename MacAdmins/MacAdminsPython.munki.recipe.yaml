@@ -7,6 +7,7 @@ MinimumVersion: '2.3'
 Input:
   NAME: MacAdminsPythonRecommended
   MUNKI_REPO_SUBDIR: macadmins/python
+  INCLUDE_PRERELEASES: False
   pkginfo:
     name: '%NAME%'
     display_name: 'MacAdmins Python Recommended'
@@ -14,7 +15,7 @@ Input:
     catalogs:
     - testing
     description: |
-      Framework files for use with popular python macadmin toolsets.
+      Framework files for use with popular Python macadmin toolsets.
     developer: MacAdmins
     unattended_install: True
     minimum_os_version: '10.9'
