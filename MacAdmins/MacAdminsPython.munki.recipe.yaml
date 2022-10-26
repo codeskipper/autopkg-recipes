@@ -7,7 +7,7 @@ MinimumVersion: '2.3'
 Input:
   NAME: MacAdminsPythonRecommended
   MUNKI_REPO_SUBDIR: macadmins/python
-  INCLUDE_PRERELEASES: False
+  INCLUDE_PRERELEASES: 'False'
   pkginfo:
     name: '%NAME%'
     display_name: 'MacAdmins Python Recommended'
