@@ -5,13 +5,16 @@ ParentRecipe: com.github.homebysix.munki.GitHubCLI
 MinimumVersion: '2.3'
 
 Input:
+  MUNKI_REPO_SUBDIR: 'apps/%NAME%'
+  MUNKI_CATEGORY: 'Development'
   pkginfo:
     catalogs:
     - testing
     description: Command line interface for managing your GitHub projects. See https://cli.github.com/
     developer: GitHub, Inc.
-    display_name: GitHub CLI
+    display_name: '%NAME%'
     name: '%NAME%'
+    category: '%MUNKI_CATEGORY%'
     unattended_install: true
     unattended_uninstall: true
 
