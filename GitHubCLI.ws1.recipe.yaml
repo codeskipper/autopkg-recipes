@@ -5,6 +5,15 @@ ParentRecipe: com.github.homebysix.munki.GitHubCLI
 MinimumVersion: '2.3'
 
 Input:
+  pkginfo:
+    catalogs:
+    - testing
+    description: Command line interface for managing your GitHub projects. See https://cli.github.com/
+    developer: GitHub, Inc.
+    display_name: GitHub CLI
+    name: '%NAME%'
+    unattended_install: true
+    unattended_uninstall: true
 
   # WS1 specific input,  secrets
   WS1_OAUTH_CLIENT_ID: OAUTH2_CLIENT_ID_HERE
