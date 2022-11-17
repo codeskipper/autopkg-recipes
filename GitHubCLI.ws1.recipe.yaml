@@ -1,11 +1,10 @@
-Comment: use override with PLATFORM_ARCH setting to get Intel or Apple Silicon versions
-Description: Creates a munki package for Docker Desktop, and imports it into WorkSpace ONE.
-Identifier: com.github.codeskipper.ws1.DockerDesktop
-ParentRecipe: com.github.homebysix.munki.DockerDesktop
+Comment:
+Description: Creates a munki package for GitHub CLI, and imports it into WorkSpace ONE.
+Identifier: com.github.codeskipper.ws1.GitHubCLI
+ParentRecipe: com.github.homebysix.munki.GitHubCLI
 MinimumVersion: '2.3'
 
 Input:
-  NAME: Docker Desktop
 
   # WS1 specific input,  secrets
   WS1_OAUTH_CLIENT_ID: OAUTH2_CLIENT_ID_HERE
