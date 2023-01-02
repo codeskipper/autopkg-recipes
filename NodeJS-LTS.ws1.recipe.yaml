@@ -5,15 +5,15 @@ ParentRecipe: com.github.dataJAR-recipes.munki.nodejslts
 MinimumVersion: '2.3'
 
 Input:
-  NAME: 'NodeJS LTS'
-  MUNKI_REPO_SUBDIR: 'apps/%NAME%'
+  NAME: 'Node JS LTS'
+  #MUNKI_REPO_SUBDIR: 'apps/%NAME%'
   MUNKI_CATEGORY: 'Development'
   pkginfo:
     notes: LTS version
     catalogs:
     - testing
     description: |
-      NodeLTS.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
+      Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 
       https://nodejs.org
     developer: Node.js Foundation
