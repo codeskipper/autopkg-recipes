@@ -6,7 +6,7 @@ MinimumVersion: '2.3'
 
 Input:
   NAME: 'Node JS LTS'
-  #MUNKI_REPO_SUBDIR: 'apps/%NAME%'
+  MUNKI_REPO_SUBDIR: ''
   MUNKI_CATEGORY: 'Development'
   pkginfo:
     notes: LTS version
