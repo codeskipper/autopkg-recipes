@@ -1,6 +1,6 @@
 Comment:
 Description: Creates a munki package for GitHub DeskTop, and imports it into WorkSpace ONE.
-Identifier: com.github.codeskipper.ws1.GitHubCLI.ws1.recipe.yaml
+Identifier: com.github.codeskipper.ws1.GitHubDesktop.ws1.recipe.yaml
 ParentRecipe: com.github.homebysix.munki.GitHubDesktop
 MinimumVersion: '2.3'
 
